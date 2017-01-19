@@ -10,10 +10,12 @@
       //   { key: 'e', name: 'Egghead', url: 'https://egghead.io', search: '/search?q=' },
       //   { key: 'K', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
       // ] },
-      { name: "Listen", commands: [
-        { key: 'h', name: 'Hypem', url: 'http://hypem.com', search: '/search/' },
-        { key: 'l', name: 'Line Radio', url: 'https://linerad.io', search: '/#/' },
-        { key: 's', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
+      { name: "Entertain", commands: [
+        // { key: 'h', name: 'Hypem', url: 'http://hypem.com', search: '/search/' },
+        // { key: 'l', name: 'Line Radio', url: 'https://linerad.io', search: '/#/' },
+        { key: 'S', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
+        { key: 's', name: 'Spotify', url: 'https://play.spotify.com', search: '/search/' },
+        { key: 'y', name: 'Youtube', url: 'https://www.youtube.com', search: '/results?search_query=' },
       ] },
       { name: "Work", commands: [
         { key: 'g', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
@@ -33,6 +35,9 @@
       { name: "School", commands: [
         {key: 'c', name: 'Canvas', url: 'https://usu.instructure.com/'},
       ] },
+      { name: "Assignemnts", commands: [
+        {key: '', name: '', url: ''},
+      ]}
     ],
 
     // if none of the keys are matched, this is used for searching.
@@ -57,7 +62,7 @@
     suggestionsLimit: 4,
 
     // open queries in a new tab.
-    newTab: false,
+    newTab: true,
 
     // the delimiter between the hours and minutes in the clock.
     clockDelimiter: '&nbsp;',
@@ -75,7 +80,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 
-<title>~</title>
+<title>New Tab</title>
 
 <style type="text/css">
   @font-face {
@@ -274,7 +279,7 @@
 </aside>
 
 <script>
-  function $(s) {
+  function $(s) { //acts as a getElementById
     return document.querySelector(s);
   };
 
