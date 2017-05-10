@@ -11,8 +11,6 @@
       //   { key: 'K', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
       // ] },
       { name: "Entertain", commands: [
-        // { key: 'h', name: 'Hypem', url: 'http://hypem.com', search: '/search/' },
-        // { key: 'l', name: 'Line Radio', url: 'https://linerad.io', search: '/#/' },
         { key: 'S', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
         { key: 's', name: 'Spotify', url: 'https://play.spotify.com', search: '/search/' },
         { key: 'y', name: 'Youtube', url: 'https://www.youtube.com', search: '/results?search_query=' },
@@ -28,8 +26,8 @@
       ] },
       { name: "People", commands: [
         { key: 'r', name: 'Reddit', url: 'https://www.reddit.com', search: '/search?q=' },
-        // { key: 't', name: 'Twitter', url: 'https://twitter.com', search: '/search?q=' },
-        { key: 'i', name: 'Instagram', url: 'https://www.instagram.com', search: '/' },
+        { key: '', name: 'Twitter', url: 'https://twitter.com', search: '/search?q=' },
+        { key: '', name: 'Instagram', url: 'https://www.instagram.com', search: '/' },
         { key: 'f', name: 'Facebook', url: 'https://www.facebook.com', search: '/search/top/?q=' },
       ] },
       { name: "Download", commands: [
@@ -47,8 +45,15 @@
         {key: 'e', name: "Terraria", url: 'http://terraria.gamepedia.com', search: '/index.php?search='},
         {key: 'w', name: 'My Wiki', url: 'https://sites.google.com/view/chasewiki/home?authuser=0', search: ''},
         {key: 'W', name: 'My Wiki(edit)', url: 'https://sites.google.com/s/0BxanVNxWvhM7bEpYQVpLWnl3RjA/p/0BxanVNxWvhM7VEN5X2VLQjRpams/edit', search: ''},
-        ]},
+        ] },
+      { name: "Work", commands: [
+        {key: 'I', name: 'Intra', url: 'http://intra.usurf.usu.edu/'},
+        {key: 'd', name: 'SDL Git', url: 'http://sdlgit.usurf.usu.edu/'},
+        ] },
     ],
+    
+    // Keys in Use:
+    // S, s, y, i, g, 1, 2, m, k, t, r, f, T, Y, 7, c, b, G, u, e, w, W,
 
     // if none of the keys are matched, this is used for searching.
     defaultSearch: 'https://www.google.com/search?q=',
